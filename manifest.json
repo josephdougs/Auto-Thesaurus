@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Auto-Thesaurus 1000",
+  "description": "This extension replaces highlighted words with their more frequently used synonyms.",
+  "version": "1",
+
+  "browser_action": {
+    "default_icon": "logo.png"
+  },
+  
+  "permissions": [
+    "activeTab"
+  ],
+  
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  
+  "content_scripts": [
+    {
+	  "matches" : ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  
+  "author": "Joseph D Smith"
+}
