@@ -10,7 +10,9 @@
   },
   
   "permissions": [
-    "activeTab"
+    "activeTab",
+	"storage",
+	"unlimitedStorage"
   ],
   
   "background": {
@@ -21,7 +23,7 @@
   "content_scripts": [
     {
 	  "matches" : ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["3000_most_common_en.js", "US_en_thes.js", "content.js"]
     }
   ],
   
