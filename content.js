@@ -1,5 +1,3 @@
-console.log("well aren't you just a little turd?");
-
 // heres that sweet sweet regular expression
 // str.match(/(\S+|\s+)/g).join("")
 // basically match all substrings that are nonwhitespace and ones that are whitespace and the 'g' means to
